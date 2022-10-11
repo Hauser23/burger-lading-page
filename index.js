@@ -18,26 +18,32 @@ const btnMenu = document.querySelector("#open-menu");
 const Menu = document.querySelector("#navbar-nav");
 const CloseMenu = document.querySelector("#menu-mobile-close");
 const CloseMenu2 = document.querySelector("#close-menu");
-const updatemenu = document.querySelector("li");
+const updatemenu = document.querySelector(".nav-item");
 
 
-btnMenu.addEventListener('click', function(){
-    Menu.classList.toggle('activar');
-    CloseMenu.classList.toggle('close');
+btnMenu.addEventListener('click', function closeMenu3(){
     CloseMenu2.classList.toggle('close');
+    CloseMenu.classList.toggle('close');
+    Menu.classList.toggle('activar');
 });
 
 CloseMenu.addEventListener('click', function(){
+    Menu.classList.toggle('activar');
+    CloseMenu2.classList.toggle('close');
+    CloseMenu.classList.toggle('close');
 
+});
+
+// updatemenu.addEventListener('click', function(){
+//     Menu.classList.toggle('activar');
+//     CloseMenu.classList.toggle('close');
+//     CloseMenu2.classList.toggle('close');
+// });
+
+function closeMenu() {
+    //Close Menu
     Menu.classList.toggle('activar');
     CloseMenu.classList.toggle('close');
     CloseMenu2.classList.toggle('close');
-
-});
-
-updatemenu.addEventListener('click', function(){
-    Menu.classList.remove('activar');
-    CloseMenu.classList.remove('close');
-    CloseMenu2.classList.remove('close');
-});
+  }
 
