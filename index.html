@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="https://i.postimg.cc/wjYTmfqs/favicon-16x16.png" type="image/x-icon">
-    <title>Burgeria Restaurant</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Burger Restaurant</title>
 </head>
 
     <body>
@@ -20,7 +23,7 @@
             <nav class="nav">
 
                 <span class="logo">
-                    <a href="">taste</a>
+                    <a>taste</a>
                 </span>
 
                 <ul id="navbar-nav" class="navbar-nav">
@@ -29,7 +32,7 @@
                     </li>
 
                     <li onclick="closeMenu()" class="nav-item" >
-                        <a href="#about">About</a>
+                        <a class="nav-a" href="#about">About</a>
                     </li>
 
                     <li onclick="closeMenu()" class="nav-item" >
@@ -40,7 +43,7 @@
                         <a href="#today-menu">Menu</a>
                     </li>
 
-                    <li onclick="closeMenu()" class="nav-item" >
+                    <li class="nav-item" >
                         <a href="#gallery">Gallery</a>
                     </li>
 
@@ -98,7 +101,7 @@
             <h2>Offers & Promos</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-            <!-- <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">Slide 1</div>
                   <div class="swiper-slide">Slide 2</div>
@@ -111,12 +114,12 @@
                   <div class="swiper-slide">Slide 9</div>
                 </div>
                 <div class="swiper-pagination"></div>
-              </div> -->
-
-            <div class="card-container swiper mySwiper">
+              </div>
+            </div>
+            <!-- <div class="card-container swiper mySwiper">
                 <div class="card-swiper">    
                     <div class="card swiper-slide">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -126,7 +129,7 @@
                     </div>
 
                     <div class="card ">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -136,7 +139,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -146,7 +149,7 @@
                     </div>
                     
                     <div class="card">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -156,7 +159,7 @@
                     </div>
 
                     <div class="card ">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -166,7 +169,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -176,7 +179,7 @@
                     </div>
 
                     <div class="card ">
-                        <img src="https://i.postimg.cc/W35N9cLh/menu-3.jpg" alt="">
+                        <img src="https://i.postimg.cc/T3nTzDv8/offer-2.jpg" alt="">
                         <div class="card-text">
                             <h2>$39.50</h2>
                             <h3>Fresh Salmon Fish</h3>
@@ -187,9 +190,9 @@
 
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
-         
-        </div>
+            </div> -->
+
+
 
         <div id="today-menu" class="section-3">
 
@@ -326,9 +329,8 @@
 
         <div id="google-maps" class="section-6">
 
-        <!-- google maps -->    
-        <div id="map">
-
+        <!-- GOOGLE MAPS -->    
+        <div id="map" cla>
 
 
         </div>
@@ -359,6 +361,9 @@
 
             </div>
 
+       
+          
+
                     <div class="footer-icons">
                         <img src="https://img.icons8.com/material-rounded/344/instagram-new.png" alt="Instagram">
                         <img src="https://img.icons8.com/ios-filled/344/twitter-circled--v1.png" alt="Twitter">
@@ -369,12 +374,11 @@
 
         </div>
 
+
+
     </body>
-
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTsxDmUOPGOMcIT--Bm_r3wko2y-zwJ4E&callback=initMap"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
 
 </html>
